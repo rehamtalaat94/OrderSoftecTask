@@ -1,0 +1,39 @@
+<!-- Content - Start  -->
+<div id="content-wrapper">
+    <div class="container-fluid">
+       <h1>Products</h1>
+       <br>
+       <br>
+       <div class="demo">
+          <div class="container">
+             <div class="row" id="products">
+                <div class="col-md-3 col-sm-6" *ngFor="let product of products">
+                   <div class="product-grid">
+                      <div class="product-image">
+                         <a href="#" class="image">
+                         <img class="pic-1" src="{{product.ProductImg}}">
+                         <img class="pic-2" src="{{product.ProductImg}}">
+                         </a>
+                         
+                      </div>
+                      <div class="product-content">
+                         <h3 class="title"><a href="#">{{product.ProductName}}</a></h3>
+                         <div class="price">{{product.ProductPrice}} </div>
+                         <a class="add-cart" href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-cart" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                               <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                               <circle cx="6" cy="19" r="2" />
+                               <circle cx="17" cy="19" r="2" />
+                               <path d="M17 17h-11v-14h-2" />
+                               <path d="M6 5l14 1l-1 7h-13" />
+                            </svg>
+                            Add to cart 
+                         </a>
+                      </div>
+                   </div>
+                </div>
+             </div>
+          </div>
+       </div>
+    </div>
+ </div>

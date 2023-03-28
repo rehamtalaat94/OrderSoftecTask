@@ -1,0 +1,36 @@
+<div id="content-wrapper">
+    <div class="container-fluid">
+       <h1>Users</h1>
+       <div class="demo">
+          <div class="">
+             <div class="row responsivetable" id="orders">
+                <div class="col-md-12">
+                   <table>
+                      <caption>1234 Users</caption>
+                      <thead>
+                         <tr>
+                            <th scope="col"> Id</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Email</th>
+                            <th scope="col">Phone</th>
+                            <th scope="col">Address</th>
+                            <th scope="col">Register Date</th>
+                         </tr>
+                      </thead>
+                      <tbody>
+                         <tr *ngFor="let customer of customers">
+                            <td data-label=" Id"> <a href="">{{customer.Id}}</a> </td>
+                            <td data-label="Name">{{customer.Name}}</td>
+                            <td data-label="Email">{{customer.Email}}</td>
+                            <td data-label="Phone">{{customer.Phone}}</td>
+                            <td data-label="Address">{{customer.Address}}</td>
+                            <td data-label="Register Date">{{customer.RegisterDate}}</td>
+                         </tr>
+                      </tbody>
+                   </table>
+                </div>
+             </div>
+          </div>
+       </div>
+    </div>
+ </div>

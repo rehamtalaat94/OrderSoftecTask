@@ -1,1 +1,55 @@
-/* You can add global styles to this file, and also import other style files */
+$color_1: #616874;
+$color_2: #1c2d41;
+$font-family_1: 'Montserrat', sans-serif;
+
+/* GENERAL */
+@import "https://fonts.googleapis.com/css2?family=Montserrat&display=swap";
+@font-face {
+	font-family: OptionSans;
+	src: url(assets/fonts/OptionSans-Light.otf);
+}
+body {
+	margin: 0;
+	overflow-x: hidden;
+	color: $color_1;
+	background: #F8FAFF;
+	font-family: $font-family_1;
+}
+* {
+	outline: none;
+}
+.h1 {
+	font-size: 1.5rem;
+	color: $color_2 !important;
+}
+h1 {
+	font-size: 1.5rem;
+	color: $color_2 !important;
+}
+@media (min-width: 1200px) {
+	.container {
+		max-width: 94%;
+	}
+}
+
+/* MAIN CONTENT */
+#content-wrapper {
+	display: block;
+	background: white;
+	padding: 22px;
+	margin: 20px;
+	border: 1px solid #DFE9FF;
+	border-radius: 35px;
+	overflow: hidden;
+	margin-top: 110px;
+	box-shadow: 0px 3px 9px 0px rgba(162, 176, 190, 0.15);
+	margin-left: 52px;
+	width: 99%;
+}
+
+@media(max-width:600px) {
+	#content-wrapper {
+		width: calc(100% - 64px);
+		margin-left: 70px;
+	}
+}

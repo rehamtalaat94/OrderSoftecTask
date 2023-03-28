@@ -1,0 +1,38 @@
+<div id="content-wrapper">
+    <div class="container-fluid">
+       <h1>Orders</h1>
+       <div class="demo">
+          <div class="">
+             <div class="row responsivetable" id="orders">
+                <div class="col-md-12">
+                   <table>
+                      <caption>1234 Order</caption>
+                      <thead>
+                         <tr>
+                            <th scope="col">Order Id</th>
+                            <th scope="col">Order Date</th>
+                            <th scope="col">UserId</th>
+                            <th scope="col">Total Price</th>
+                            <th scope="col">Payment Method</th>
+                         </tr>
+                      </thead>
+                      <tbody>
+                         <tr *ngFor="let order of orders">
+                            <td data-label="Order Id"> 
+                              <a [routerLink]="['/orderDetails',order.OrderId]">{{order.OrderId}} </a> 
+
+                              <!-- <a  routerLink="/orderDetails"  [queryParams]="{ id: order.OrderId }">{{order.OrderId}}</a>  -->
+                           </td>
+                            <td data-label="Order Date">{{order.OrderDate}}</td>
+                            <td data-label="UserId">{{order.UserId}}</td>
+                            <td data-label="Total Price">$1,190</td>
+                            <td data-label="Payment Method">{{order.PaymentType}}</td>
+                         </tr>
+                      </tbody>
+                   </table>
+                </div>
+             </div>
+          </div>
+       </div>
+    </div>
+ </div>

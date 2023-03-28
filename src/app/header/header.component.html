@@ -1,0 +1,76 @@
+<header id="header">
+    <div class="menu-button" (click)="clickEvent()"  
+    >
+       <div id="nav-icon3">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+       </div>
+    </div>
+    <div id="top-bar">
+       <h3>
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-box" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#b4293d" fill="none" stroke-linecap="round" stroke-linejoin="round">
+             <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+             <polyline points="12 3 20 7.5 20 16.5 12 21 4 16.5 4 7.5 12 3"></polyline>
+             <line x1="12" y1="12" x2="20" y2="7.5"></line>
+             <line x1="12" y1="12" x2="12" y2="21"></line>
+             <line x1="12" y1="12" x2="4" y2="7.5"></line>
+          </svg>
+          <span>Order</span>ak
+       </h3>
+       <form>
+          <div class="customize-input">
+             <input  class="form-control custom-shadow custom-radius border-0 bg-white" type="search" placeholder="Search" aria-label="Search">
+             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search form-control-icon" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <circle cx="10" cy="10" r="7" />
+                <line x1="21" y1="21" x2="15" y2="15" />
+             </svg>
+          </div>
+       </form>
+    </div>
+ </header>
+<!-- Navigation - Start  -->
+<nav id="sidemenu" [ngClass]="status ? 'open' : 'close'">
+    <div class="main-menu">
+       <ul class='main-menu'>
+          <li class="link-active">
+             <a routerLink="" routerLinkActive="active">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-box-multiple" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                   <rect x="7" y="3" width="14" height="14" rx="2" />
+                   <path d="M17 17v2a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2v-10a2 2 0 0 1 2 -2h2" />
+                </svg>
+                Products
+             </a>
+          </li>
+          <li>
+             <a routerLink="/orders-component" routerLinkActive="active">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-box" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                   <polyline points="12 3 20 7.5 20 16.5 12 21 4 16.5 4 7.5 12 3" />
+                   <line x1="12" y1="12" x2="20" y2="7.5" />
+                   <line x1="12" y1="12" x2="12" y2="21" />
+                   <line x1="12" y1="12" x2="4" y2="7.5" />
+                </svg>
+                Orders
+             </a>
+          </li>
+          <li>
+             <a routerLink="/customers-component" routerLinkActive="active">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-users" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                   <circle cx="9" cy="7" r="4" />
+                   <path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+                   <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                   <path d="M21 21v-2a4 4 0 0 0 -3 -3.85" />
+                </svg>
+                users
+             </a>
+          </li>
+       </ul>
+    </div>
+    <p class="copyright">&copy; 2023</p>
+ </nav>
+ <!-- Navigation - End  -->

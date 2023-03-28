@@ -1,0 +1,102 @@
+/* ORDERS AND USERS */
+.responsivetable table {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	table-layout: fixed;
+	margin-top: 30px;
+	border-collapse: separate;
+	border-spacing: 0 15px;
+}
+
+.responsivetable table caption {
+	font-size: 1.5em;
+	margin: .5em 0 .75em;
+}
+
+.responsivetable table tr {
+	background-color: #f8f8f8;
+	border: 1px solid #ddd;
+	padding: .35em;
+	border-radius: 18px;
+	overflow: hidden;
+}
+
+.responsivetable table thead tr {
+
+	background-color: white;
+
+	border: none;
+}
+
+.responsivetable table th,
+.responsivetable table td {
+	padding: .625em;
+	text-align: center;
+}
+
+.responsivetable table td:nth-of-type(1) {
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+}
+
+.responsivetable table td:nth-last-of-type(1) {
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+}
+
+.responsivetable table thead th {
+	padding: 20px;
+	color: black;
+}
+
+.responsivetable table th {
+	font-size: .85em;
+	letter-spacing: .1em;
+	text-transform: uppercase;
+}
+
+@media screen and (max-width: 600px) {
+	.responsivetable table {
+		border: 0;
+	}
+
+	.responsivetable table caption {
+		font-size: 1.3em;
+	}
+
+	.responsivetable table thead {
+		border: none;
+		clip: rect(0 0 0 0);
+		height: 1px;
+		margin: -1px;
+		overflow: hidden;
+		padding: 0;
+		position: absolute;
+		width: 1px;
+	}
+
+	.responsivetable table tr {
+		border-bottom: 3px solid #ddd;
+		display: block;
+		margin-bottom: .625em;
+	}
+
+	.responsivetable table td {
+		border-bottom: 1px solid #ddd;
+		display: block;
+		font-size: .8em;
+		text-align: right;
+	}
+
+	.responsivetable table td::before {
+		content: attr(data-label);
+		float: left;
+		font-weight: bold;
+		text-transform: uppercase;
+	}
+
+	.responsivetable table td:last-child {
+		border-bottom: 0;
+	}
+}
